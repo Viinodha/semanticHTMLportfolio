@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Jane Developer | Hire Frontend Engineer</title>
+  <meta name="description" content="Contact Jane Developer for frontend engineering, accessibility audits, and semantic web projects. Send a message using the accessible form.">
+  <link rel="canonical" href="https://www.example.com/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Jane Developer | Hire Frontend Engineer">
+  <meta property="og:description" content="Contact Jane Developer for frontend engineering, accessibility audits, and semantic web projects. Send a message using the accessible form.">
+  <meta property="og:url" content="https://www.example.com/contact.html">
+  <meta property="og:locale" content="en_US">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <section class="site-header__inner">
+      <p class="site-title">
+        <a href="index.html">Jane Developer</a>
+      </p>
+      <nav class="primary-nav" aria-label="Primary site navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main id="main-content">
+    <header>
+      <h1>Contact</h1>
+      <p class="lead">
+        Use the form below to send a message. All fields are required and include
+        accessible error descriptions when validation fails.
+      </p>
+    </header>
+
+    <section aria-labelledby="contact-form-heading">
+      <h2 id="contact-form-heading">Send a Message</h2>
+
+      <form
+        class="contact-form"
+        id="contact-form"
+        action="https://www.example.com/api/contact"
+        method="post"
+        novalidate
+        aria-describedby="form-instructions"
+      >
+        <p id="form-instructions" class="field-hint">
+          Required fields are marked. Press Tab to move between fields. Errors appear below each field.
+        </p>
+
+        <p id="form-status" role="status" aria-live="polite" class="field-hint"></p>
+
+        <fieldset>
+          <legend>Your details</legend>
+
+          <p class="form-field">
+            <label for="contact-name">Full name</label>
+            <input
+              type="text"
+              id="contact-name"
+              name="name"
+              autocomplete="name"
+              required
+              minlength="2"
+              maxlength="100"
+              aria-required="true"
+              aria-describedby="contact-name-hint contact-name-error"
+            >
+            <small id="contact-name-hint" class="field-hint">Enter your first and last name.</small>
+            <strong id="contact-name-error" class="field-error" role="alert" hidden></strong>
+          </p>
+
+          <p class="form-field">
+            <label for="contact-email">Email address</label>
+            <input
+              type="email"
+              id="contact-email"
+              name="email"
+              autocomplete="email"
+              required
+              maxlength="254"
+              aria-required="true"
+              aria-describedby="contact-email-hint contact-email-error"
+            >
+            <small id="contact-email-hint" class="field-hint">We will reply to this address within two business days.</small>
+            <strong id="contact-email-error" class="field-error" role="alert" hidden></strong>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Message details</legend>
+
+          <p class="form-field">
+            <label for="contact-subject">Subject</label>
+            <input
+              type="text"
+              id="contact-subject"
+              name="subject"
+              required
+              minlength="5"
+              maxlength="150"
+              aria-required="true"
+              aria-describedby="contact-subject-hint contact-subject-error"
+            >
+            <small id="contact-subject-hint" class="field-hint">Briefly describe the purpose of your message.</small>
+            <strong id="contact-subject-error" class="field-error" role="alert" hidden></strong>
+          </p>
+
+          <p class="form-field">
+            <label for="contact-message">Message</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              required
+              minlength="20"
+              maxlength="2000"
+              aria-required="true"
+              aria-describedby="contact-message-hint contact-message-error"
+            ></textarea>
+            <small id="contact-message-hint" class="field-hint">Minimum 20 characters. Include project scope or timeline if applicable.</small>
+            <strong id="contact-message-error" class="field-error" role="alert" hidden></strong>
+          </p>
+        </fieldset>
+
+        <p class="form-actions">
+          <button type="submit">Send message</button>
+          <button type="reset">Clear form</button>
+        </p>
+      </form>
+    </section>
+
+    <aside aria-labelledby="direct-contact-heading">
+      <h2 id="direct-contact-heading">Direct Contact</h2>
+      <p>
+        Prefer email? Write to
+        <a href="mailto:jane.developer@example.com">jane.developer@example.com</a>.
+      </p>
+      <p>
+        Connect on
+        <a href="https://www.linkedin.com/in/jane-developer" rel="me noopener noreferrer">LinkedIn</a>
+        or
+        <a href="https://github.com/jane-developer" rel="me noopener noreferrer">GitHub</a>.
+      </p>
+    </aside>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <section class="site-footer__inner">
+      <nav aria-label="Footer site navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <p>
+        <small>&copy; <time datetime="2026">2026</time> Jane Developer. All rights reserved.</small>
+      </p>
+      <p>
+        <small>Email: <a href="mailto:jane.developer@example.com">jane.developer@example.com</a></small>
+      </p>
+    </section>
+  </footer>
+
+  <script src="js/contact-form.js" defer></script>
+</body>
+</html>
