@@ -16,7 +16,7 @@ The goal was to move away from generic "div-soup" layouts and build a flawless, 
 
 ##  Project Preview
 
-Accessible, semantic multi-page portfolio website:
+**Accessible, semantic multi-page portfolio website:**
 
 **Live site:** https://viinodha.github.io/semanticHTMLportfolio/index.html
 
