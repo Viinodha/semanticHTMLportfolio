@@ -16,8 +16,12 @@ The goal was to move away from generic "div-soup" layouts and build a flawless, 
 
 ##  Project Preview
 
+Accessible, semantic multi-page portfolio website:
 
-Portfolio Structure Preview
+**Live site:** https://viinodha.github.io/semanticHTMLportfolio/index.html
+
+Portfolio Structure Preview:
+
 <img width="1600" height="754" alt="WhatsApp Image 2026-06-02 at 1 51 32 AM" src="https://github.com/user-attachments/assets/5abc96a4-b693-477b-a482-2a91f08e4246" />
 
 
